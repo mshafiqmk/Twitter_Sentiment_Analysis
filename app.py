@@ -27,4 +27,4 @@ def tweets():
     tweets = api.get_tweets()
     return jsonify({'data': tweets, 'count': len(tweets)})
 
-app.run(host="localhost",port=5000,debug=True)
+app.run(host="0.0.0.0",port=5000,debug=True)
